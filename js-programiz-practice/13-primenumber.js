@@ -1,9 +1,35 @@
-let n=15;
-if  (n%2 = 0)
+let n=5;
+let isPrime=true;
+
+if  (n === 1)
 {
-    console.log(he given number is not prime");
+    console.log("The given number is neither prime nor composite number");
 }
-else
+else if (n>1)
 {
-    console.log ("The given number is prime");
+  
+    for ( let i = 2; i < n; i++)
+     {
+        if(n%i == 0)
+        {
+       isPrime = false;
+        //console.log("The given number is not prime");
+        break;
+        }
+     }
+     if(isPrime)
+     
+     {
+      console.log(`${n} is a prime number`);
+     }
+     else
+     {
+      console.log(`${n} is not a prime number`);
+     }
 }
+/*else
+{
+  console.log("The number is not a prime number");
+
+}
+*/
