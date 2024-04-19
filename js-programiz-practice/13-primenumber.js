@@ -7,7 +7,7 @@ if  (n === 1)
 }
 else if (n>1)
 {
-  
+ 
     for ( let i = 2; i < n; i++)
      {
         if(n%i == 0)
@@ -33,3 +33,4 @@ else if (n>1)
 
 }
 */
+
